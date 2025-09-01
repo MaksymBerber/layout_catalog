@@ -11,13 +11,14 @@ body {
 .catalog {
   display: grid;
   justify-content: center;
+  padding: 50px 40px;
+  gap: 46px;
 }
 
 .catalog__block {
   display: grid;
   grid-template-columns: repeat(1, 200px);
-  gap: 48px 46px;
-  padding: 50px 40px;
+  gap: 48px;
 }
 
 @media (min-width: 488px) {
