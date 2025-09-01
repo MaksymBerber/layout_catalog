@@ -37,6 +37,7 @@ body {
   justify-content: center;
   text-decoration: none;
   color: #060b35;
+  transition: transform 300ms;
 }
 
 .is-active {
@@ -52,7 +53,6 @@ body {
 
 .nav__link:hover {
   cursor: pointer;
-  transition-duration: 300ms;
 
   color: var(--blue);
 }
