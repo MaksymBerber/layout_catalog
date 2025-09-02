@@ -39,7 +39,9 @@ body {
   justify-content: center;
   text-decoration: none;
   color: $text-color;
-  transition: transform 300ms;
+  transition:
+    color 300ms,
+    transform 300ms;
 }
 
 .is-active {
