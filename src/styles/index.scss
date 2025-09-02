@@ -2,7 +2,6 @@
 @import './header-styles';
 @import './card';
 @import './stars';
-@import './media';
 
 body {
   margin: 0;
@@ -11,30 +10,30 @@ body {
 .catalog {
   display: grid;
   justify-content: center;
-  padding: 50px 40px;
-  gap: 46px;
+  padding: $padding-v $padding-h;
+  gap: $gap-x;
 }
 
 .catalog__block {
   display: grid;
-  grid-template-columns: repeat(1, 200px);
-  gap: 48px;
+  grid-template-columns: repeat(1, $card-width);
+  gap: $gap-y;
 }
 
 @media (min-width: 488px) {
   .catalog__block {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $card-width);
   }
 }
 
 @media (min-width: 768px) {
   .catalog__block {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $card-width);
   }
 }
 
 @media (min-width: 1024px) {
   .catalog__block {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $card-width);
   }
 }
